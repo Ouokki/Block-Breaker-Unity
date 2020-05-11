@@ -3,8 +3,8 @@ class MyEditorScript
 {
      static void PerformBuild ()
      {
-         string[] scenes = { "Assets/Scenes/Levels.unity" };
-          
-         BuildPipeline.BuildPlayer(scenes);
+         //string[] scenes = { "Assets/Scenes/Levels.unity" };
+          Debug.Log("Hello " );
+         //BuildPipeline.BuildPlayer(scenes);
      }
 }
