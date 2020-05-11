@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 
 public class Ball : MonoBehaviour {
 
@@ -20,6 +21,7 @@ public class Ball : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
+        
         paddleToBallVector = transform.position - paddle1.transform.position;
         myAudioSource = GetComponent<AudioSource>();
         myRigidBody2D = GetComponent<Rigidbody2D>();
