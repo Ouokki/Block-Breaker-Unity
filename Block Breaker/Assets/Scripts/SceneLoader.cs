@@ -22,3 +22,10 @@ public class SceneLoader : MonoBehaviour {
         Application.Quit();
     }
 }
+
+
+
+/*public void LoadNextScene()
+	{
+			SceneManager.LoadScene(1);
+	}*/
