@@ -3,7 +3,7 @@ class MyEditorScript
 {
      static void PerformBuild ()
      {
-         string[] scenes = { "Assets/Scenes.unity" };
+         string[] scenes = { "Assets/Scenes/Start Menu.unity" };
          BuildPipeline.BuildPlayer(scenes, ...);
      }
 }
