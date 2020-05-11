@@ -5,6 +5,6 @@ class MyEditorScript
      {
          string[] scenes = { "Assets/Scenes/Start Menu.unity" };
           
-         BuildPipeline.BuildPlayer(scenes, ...);
+         BuildPipeline.BuildPlayer(scenes);
      }
 }
