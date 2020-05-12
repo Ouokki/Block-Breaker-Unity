@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scores.unity
     guid: d0878e1d1ebc5134db36eb45f6b90fc2
+  - enabled: 1
+    path: Assets/Scenes/Start Menu.unity
+    guid: 2cf002c31371bcc48bde5ca3fecfee2d
   m_configObjects: {}

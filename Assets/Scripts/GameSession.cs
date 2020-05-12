@@ -50,6 +50,7 @@ public class GameSession : MonoBehaviour {
 
     public void ResetGame()
     {
+        Debug.Log(scoreText.text);
         Destroy(gameObject);
     }
     public bool IsAutoPlayEnabled()
