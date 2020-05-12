@@ -6,21 +6,21 @@ using System;
 using UnityEditor;
 using System.Collections.Generic;
 
-public class Scores
+public class SeparateScore
 {
     
     [MenuItem("Tools/Write file")]
-    public static void WriteString(string value)
+    public static void WriteString()
     {
         string path = "Assets/text/scores.txt";
 
         //Write some text to the test.txt file
         StreamWriter writer = new StreamWriter(path, true);
-        writer.WriteLine(value);
+        
         writer.Close();
 
         //Re-import the file to update the reference in the editor
-        AssetDatabase.ImportAsset(path); 
+        //AssetDatabase.ImportAsset(path); 
         //TextAsset asset = Resources.Load("scores");
 
         //Print the text from the file
