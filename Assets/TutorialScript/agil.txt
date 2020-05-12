@@ -1,0 +1,5 @@
+block breaker est un jeux ou votre but est de casser chacun des blocs du niveau actuel. Pour ce faire, vous disposez d'une
+petite platforme que vous pouvez controler grace a votre sourie et d'une balle qui rebondie sur chaque obstacle. 
+Laissez cette balle tomber et vous perdez, cassez tous les blocs du niveau actuel et vous passerez au niveau suivant. Chaque niveau
+sera plus difficile que son précédent !
+Votre score augmentera aprés chaque action. Bonne chance !
