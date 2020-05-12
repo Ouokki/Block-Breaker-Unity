@@ -4,7 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour {
+    public AudioSource audioSource;
+    public AudioClip clip;
+    public float volume=0.5f;
 
+    void Start ()
+    {
+        
+        
+        audioSource = GetComponent<AudioSource>();
+            audioSource.PlayOneShot(clip, volume);
+
+	}
 	public void LoadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -14,6 +25,7 @@ public class SceneLoader : MonoBehaviour {
     public void LoadStartScene()
     {
         SceneManager.LoadScene(0);
+
         FindObjectOfType<GameSession>().ResetGame();
     }
 
