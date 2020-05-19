@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+namespace Lmhzg
+{
+    
 
 public class GameSession : MonoBehaviour {
 
-
-    
+   
 
     // config params
     [Range(0.1f, 10f)] [SerializeField] float gameSpeed = 1f;
@@ -15,10 +17,11 @@ public class GameSession : MonoBehaviour {
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] bool isAutoPlayEnabled;
     
-    int hzg ;
+    int hzg ; 
 
     // state variables
     [SerializeField] int currentScore = 0;
+
 
     private void Awake()
     {
@@ -34,7 +37,7 @@ public class GameSession : MonoBehaviour {
         }
     }
 
-    private void Start()
+    public void Start()
     {
         scoreText.text = currentScore.ToString();    
     }
@@ -62,4 +65,5 @@ public class GameSession : MonoBehaviour {
     {
         return isAutoPlayEnabled;
     }
+}
 }
