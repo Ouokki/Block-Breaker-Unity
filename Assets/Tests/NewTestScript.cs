@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using Lmhzg;
+using System;
+
 namespace Tests
 {
     public class NewTestScript
@@ -11,14 +12,15 @@ namespace Tests
         
         // A Test behaves as an ordinary method
         [Test]
-        public void NewTestScriptSimplePasses()
+        public void TestScoreEarlyGame()
         {
-            var gamesession= new GameObject().AddComponent<Lmhzg.GameSession>();
+            //var gamesession= new GameObject().AddComponent<GameSession>();
             // Use the Assert class to test conditions
             
-            bool isActive = false;
+            int score = GameSession.currentScore;
+            Debug.Log(score);
 
-            Assert.AreEqual(false, isActive);
+            Assert.AreEqual(0, score);
         }
        
 

@@ -1,19 +1,21 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using System.Collections.Generic;
+
+
 
  
 public class SceneInvoker : MonoBehaviour
 {
    
-   
-    
+   //public GameSession  gamesession;
     public void Invoke(string scene)
     {
-        if (scene=="Level 1"){
-            SeparateScore.WriteString();
+        if(scene=="Level 1"){
+            //gamesession.ResetGame();
+           //FindObjectOfType<GameSession>().ResetGame();
         }
+        
 
         SceneManager.LoadScene(scene);    
         
